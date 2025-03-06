@@ -1,0 +1,39 @@
+body {
+    display: grid;
+    grid-template: auto 1fr auto / auto 1fr auto;
+    height: 80vh;
+}
+header {
+    
+    grid-column: 1/4;
+    border: 1px solid steelblue;
+    background: darkgrey;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    
+    text-decoration: none;
+    
+}
+
+
+.Main-Content {
+    grid-column: 1/2;
+    background: green;
+}
+.Aside-Content {
+    grid-column: 3/4;
+    background: blue;
+}
+footer {
+    grid-column: 1/4;
+    padding: 2rem;
+    text-align: center;
+    border: 1px solid steelblue;
+    background: darkgrey;
+}
+.Main-Content,.Aside-Content {
+    padding: 2rem;
+    margin: 1rem;
+}
