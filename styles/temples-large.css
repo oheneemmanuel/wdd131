@@ -1,0 +1,16 @@
+@media screen and (min-width: 600px) {
+    #menu {
+        display: none;
+
+    }
+
+    #menu-option {
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        
+    }
+}
