@@ -1,29 +1,25 @@
-// Select the input element
-const inputElement = document.querySelector('input');
+const input = document.querySelector('#favchap');
+const button = document.querySelector('button');
+const list = document.querySelector('ul');
 
-// Select the button element
-const buttonElement = document.querySelector('button');
+const li = document.createElement('ul');
 
-// Select the list element
-const listElement = document.querySelector('ul');
-// create li that will hold entry
-const li = document.createElement('li');
- // create a delete button 
-const deleteButton = document.createElement("button");
-// populate li
+const deleteButton = document.createElement('button');
+
 li.textContent = input.value;
-// populate the delete button
-buttonElement.textContent = "❌";
 
-// appends the li element variable with the delete button
+deleteButton.textContent = '❌';
 li.append(deleteButton);
-
-//append the li element variable to the unordered list
-list.append(li);
+li.append(li);
 
 button.addEventListener('click', function() {
-    // Code to execute when the button is clicked
-    if (input.value.trim() !== "") {}
-    
-    // Additional logic can go here (e.g., adding a new chapter to the list)
+    if (input.value.trim() !== '') {const deleteButton = document.createElement('button')};
+
 });
+
+deleteButton.addEventListener('click', function () {
+    list.removeChild(li);
+    input.focus();
+    input.value = '';
+    
+})

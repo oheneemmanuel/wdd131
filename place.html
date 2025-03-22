@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Page</title>
+    <!-- Link to CSS and Java script -->
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Ghana</h1>
+    </header>
+
+    <main>
+
+        <!-- Hero image with responsive srcset -->
+        <picture>
+            <!-- Source for large screens -->
+            <source media="(min-width: 1200px)" srcset="images/umbrella.webp">
+        
+            <!-- Source for small screens -->
+            <source media="(max-width: 767px)" srcset="images/umbrella.webp">
+            
+            <!-- Fallback image in case none of the source conditions are met -->
+            <img src="images/umbrella.webp" alt="Hero Image" style="width: 100%; height: auto;">
+          </picture>
+          
+       
+        <section class="card" id="data">
+            <h2>Data</h2>
+            <div>
+                
+                <p><strong>Area:</strong></p>
+                <p>238,533 square km²</p>
+                <p><strong>Population:</strong></p>
+                <p>~34 million (as of 2024)</p>
+                <p><strong>Captal:</strong></p>
+                <p>Accra</p>
+                <p><strong>Languages:</strong></p>
+                <p>Twi, English</p>
+                <p><strong>Currency:</strong></p>
+                <p>Ghana Cedis (GH₵)</p>
+                
+            </div>
+        </section>
+
+        
+
+        <section class="card" id="weather">
+            <h2>Weather</h2>
+            <img src="images/weather-icon.svg" alt="weather" id="weather-icon">
+            <div>
+                <p><strong>Temperature:</strong></p>
+                <p><span id="temperature">10</span> °C</p>
+                <p><strong>Conditions:</strong></p>
+                <p>Mostly cloudy</p>
+                <p><strong>Wind:</strong></p>
+                <p><span id="wind-speed">5</span> km/h</p>
+                <p><strong>Wind Chill:</strong></p>
+                <p><span id="wind-chill">9.8</span> °C</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 🌴Ohene-Emmanuel-Kwakye🌴<span id="year"></span> | Last modified: <span id="lastModified"></span></p>
+    </footer>
+
+    
+</body>
+</html>
