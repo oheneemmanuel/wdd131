@@ -1,6 +1,10 @@
-@media (max-width: 600px) {
-    #data {
-      grid-template-columns: 1fr; /* Stack items on small screens */
-      font-size: 0.8rem; /* Even smaller text on small screens */
+@media (max-width: 700px) {
+    
+    
+    #weather-icon {
+        display: none;
     }
-  }
+
+        
+    
+}
