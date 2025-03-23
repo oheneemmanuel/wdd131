@@ -1,0 +1,38 @@
+@media (max-width: 700px) {
+    
+    
+    #weather-icon {
+        display: none;
+    }
+    
+    .card {
+        border: 0;
+        position: static;
+        margin: 0 auto;
+        
+        
+        background-color: green;
+
+        padding: 0;
+        box-shadow: 0 0 1rem black;
+        
+    }
+    .card div {
+        background-color: white;
+        color: black;
+    }
+    #weather {
+        position: static;
+        
+    }
+    #weather h2 {
+        text-align: center;
+    }
+    #data {
+        position: static;
+    }
+
+
+        
+    
+}
