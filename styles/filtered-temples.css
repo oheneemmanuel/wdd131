@@ -1,0 +1,92 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#menu-option {
+    display: none;
+    list-style: none;
+    text-align: center;
+    flex-direction: column;
+
+    
+
+}
+#menu-option.open {
+    display: flex;
+
+}
+nav a {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    justify-content: space-around;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    color: white;
+}
+nav a:hover {
+	text-decoration: none;
+	background-color: #eee;
+	color: #000;
+}
+header {
+    text-align: left;
+    background-color: steelblue;
+    padding: 1rem;
+    color: white;
+}
+.album {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    justify-content: space-between;
+}
+img {
+    width: 100%;
+    height: auto;
+
+}
+main {
+    max-width: 850px;
+    margin: 0 auto;
+
+}
+figure {
+    justify-self: center;
+    text-align: center;
+    padding: 1rem;
+
+}
+main h2 {
+    text-align: center;
+}
+#menu::before {
+	content: "☰";
+}
+ 
+#menu.open::before {
+	content: "X";
+}
+#menu {
+    display: block;
+    position: absolute;
+    top: 1.5rem;
+    right: 1rem;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.temple-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    
+}
+
+
+footer {
+    background-color: steelblue;
+    text-align: center;
+    padding: 0.5rem;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}

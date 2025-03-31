@@ -51,11 +51,13 @@ main {
     background-color: lightblue;
     margin: 0 auto;
     
+    
 
 }
 .card {
     background-color: green;
     box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    
 }
 
 .card strong {
