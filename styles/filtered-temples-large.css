@@ -33,7 +33,7 @@
     .temple-card img {
         width: 100%;
         height: auto;
-        border-bottom: 1px solod #ddd;
+        border-bottom: 1px solid #ddd;
         object-fit: cover;
     }
 }
