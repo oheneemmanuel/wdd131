@@ -1,0 +1,29 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+
+}
+h1 {
+    background-color: purple;
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 1rem;
+}
+
+#confirm {
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    line-height: 2;
+    font-size: larger;
+}
+footer {
+    background-color: purple;
+    text-align: center;
+    padding: 0.5rem;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
