@@ -1,0 +1,47 @@
+header {
+    
+    border-radius: 1rem;
+    margin-bottom: 7rem;
+    
+}
+
+header img {
+    width: 150px;
+    height: auto;
+    top: 2rem;
+    float: left;
+    border: none;
+    border-radius: 1rem;
+}
+nav a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+header nav {
+
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+
+    
+    padding: 1rem;
+    font-family: Arial, sans-serif;
+    justify-content: space-around;
+
+    text-align: center;
+    margin: 0 0 1rem 1rem;
+
+
+    color: black;
+    unicode-bidi: isolate;
+
+  
+}
+h1 {
+    text-align: center;
+    
+}
