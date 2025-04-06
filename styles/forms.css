@@ -1,4 +1,4 @@
-/* General Styling */
+
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
@@ -11,7 +11,7 @@ h1 {
     text-align: center;
     background-color: purple;
     color: white;
-    font-weight: 200px;
+    font-weight: 200;
 }
 
 /* Form Styling */
@@ -140,7 +140,7 @@ input[type="submit"]:hover {
     background-color: #0056b3;
 }
 
-/* Optional Text Styling */
+
 .optional-text {
     font-size: 0.9rem;
     color: gray;
