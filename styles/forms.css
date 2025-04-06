@@ -90,7 +90,7 @@ select {
 
 .stars input[type="radio"]:checked + label {
     color: gold;
-    display: flex;
+    
     
 }
 
