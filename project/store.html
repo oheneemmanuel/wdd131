@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/site.css">
+    <link rel="stylesheet" href="styles/site-large.css">
+    <script src="scripts/store.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Welcome To The Store</h1>
+    </header>
+    <main>
+        <div id="materials"></div>
+
+
+        
+        <fieldset>
+            <legend>Deluxy Motion paint</legend>
+            <label for="color-select">Choose a Color:</label>
+            <select id="color-select" name="color"></select>
+
+            <label for="quantity">Enter Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1"  value="1">
+                
+            <button id="calculate-btn">Calculate Total</button>
+            <div id="paint-specifications"></div>
+        </fieldset>
+
+        
+    </main>
+    <footer>
+        <p>&copy;2025 <span id="currentyear"></span> Ohene Emmanuel Kwakye, GHANA </p>
+        <p id="lastModified"></p>
+    </footer>
+
+    
+</body>
+</html>

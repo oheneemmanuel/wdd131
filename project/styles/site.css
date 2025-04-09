@@ -17,6 +17,12 @@ header img {
     border: none;
     border-radius: 1rem;
 }
+h1 {
+    font-size: 2rem;
+    color: white;
+    margin: 0;
+    text-align: center;
+}
 
 #menu-option {
     display: none;
@@ -62,4 +68,146 @@ nav a:hover {
     background: none;
     border: none;
     cursor: pointer;
+}
+
+main h1 {
+    text-align: center;
+    margin: 2rem 0;
+    font-size: 2rem;
+    color: #333;
+}
+.cta {
+    border: 1px solid #333;
+    border-radius: 10px;
+    text-align: center;
+    background-color: azure;
+    margin: 2rem 0;
+}
+.cta a {
+    
+    background-color: tomato;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.button {
+    border: 1px solid #333;
+    margin: 5rem;
+}   
+.cta a:hover {
+    background-color: #333;
+    color: white;
+}
+#materials {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+    justify-content: space-between;
+}
+.good-card {
+    
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+.good-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.good-card h2 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.good-card p {
+    font-size: 1em;
+    color: #555;
+}
+fieldset {
+    border: 2px solid #0074D9;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 400px;
+    background-color: white;
+    
+}
+
+legend {
+    font-weight: bold;
+    color: #0074D9;
+    padding: 0 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.1em;
+}
+
+select, input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+button {
+    display: block;
+    width: 100%;
+    background-color: #0074D9;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #005bb5;
+}
+
+/* Paint Specifications */
+#paint-specifications {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    text-align: center;
+}
+
+#paint-specifications img {
+    max-width: 100px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+#paint-specifications h2 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+#paint-specifications p {
+    font-size: 1em;
+    color: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: slategray;
+    color: white;
+    margin-top: 2rem;
+    border-radius: 10px;
 }

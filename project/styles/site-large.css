@@ -5,6 +5,12 @@
         
         padding: 1rem;
     }
+    header h1 {
+        font-size: 2rem;
+        color: white;
+        margin: 0;
+        text-align: center;
+    }
     #menu {
         display: none;
     }
@@ -22,5 +28,12 @@
         
         
     }
+    .hero img {
+        width: 100%;
+        height: auto;
+        border-radius: 1rem;
+        margin: 0 auto;
+    }
+
 
 }

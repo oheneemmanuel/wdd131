@@ -34,7 +34,7 @@ header {
     padding: 1rem;
     color: white;
 }
-.album {
+#album {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     justify-content: space-between;
