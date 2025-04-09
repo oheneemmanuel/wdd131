@@ -1,0 +1,26 @@
+@media screen and (min-width: 700px) {
+    header {
+        display: flex;
+        align-items: center;
+        
+        padding: 1rem;
+    }
+    #menu {
+        display: none;
+    }
+    
+    
+    
+    #menu-option {
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
+        background: none;
+        align-items: center;
+        position: static;
+    
+        
+        
+    }
+
+}
