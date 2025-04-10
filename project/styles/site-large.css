@@ -6,15 +6,21 @@
         padding: 1rem;
     }
     header h1 {
+        display: flex;
         font-size: 2rem;
         color: white;
-        margin: 0;
+        
         text-align: center;
     }
     #menu {
         display: none;
     }
-    
+    #materials {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+        gap: 1rem;
+        padding: 1rem;
+    }
     
     
     #menu-option {

@@ -11,6 +11,28 @@ const goods = [
         imageUrl: "images/cement.jpg"
             
     },
+    {
+        name: "Shovel",
+        price: "GHC 60",
+        imageUrl: "images/shovel.jpg"
+
+    },
+    {
+        name: "headpan",
+        price: "GHC 30",
+        imageUrl: "images/headpan.jpg"
+
+    },
+    {
+        name: "China Door",
+        price: "GHC 2500",
+        imageUrl: "images/chinadoor.jpg"
+    },
+    {
+        name: "mesh",
+        price: "GHC 85",
+        imageUrl: "images/mesh.jpg"
+    }
 
     
 ];
@@ -28,6 +50,7 @@ const paints = [
             
     },
 ]
+const cart = [];
 const goodsContainer = document.getElementById("materials");
 const colorDropdown = document.getElementById("color-select");
 const quantityInput = document.getElementById("quantity");
@@ -53,14 +76,39 @@ function displayGoods(items) {
         price.textContent = good.price;
         card.appendChild(price);
 
+        const button = document.createElement("button");
+        button.textContent = "Buy Me";
+        button.classList.add("buy-button");
+        button.addEventListener("click", () => addToCart(good));
+        card.appendChild(button);
+        
         goodsContainer.appendChild(card);
-        
-        
     });
+
+
+        
+        
+    
     
 
 
     
+}
+function updateCartDisplay() {
+    const cartItems = document.getElementByI("cart-items");
+    cartItems.innerHTML = ""; // Clear previous content
+
+    cart.forEach((item) => {
+        const li = document.createElement("li");
+        li.textContent = `${item.name} - ${item.price}`;
+        cartItems.appendChild(li);
+    });
+
+}
+function addToCart(item) {
+    Cart.push(item);
+    alert(`${item.name} has been added to your cart!`);
+    updateCartDisplay();
 }
 displayGoods(goods);
 function populateDropDown() {
@@ -75,7 +123,7 @@ function populateDropDown() {
 function displaySpecificationsAndTotal() {
     const selectedIndex = colorDropdown.value;
     const selectedPaint = paints[selectedIndex];
-    const quantity = parseInt(quantityInput.value);
+    const quantity = parseInt(quantityInput.value) || 1;
     if (selectedPaint) {
         const totalCost = selectedPaint.price * quantity;
         paintSpecifications.innerHTML = `
