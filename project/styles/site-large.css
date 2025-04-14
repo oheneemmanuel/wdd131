@@ -106,6 +106,62 @@
         color: blue;
         
     }
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem; /* Adds spacing between elements */
+        padding: 1rem;
+        margin: 1rem auto;
+        max-width: 90%; /* Adjusts form width for smaller screens */
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    form div, fieldset {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    label {
+        font-weight: bold;
+        font-size: 1rem;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+        padding: 0.5rem;
+        font-size: 1rem;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        width: 100%; /* Makes inputs adapt to screen size */
+        box-sizing: border-box; /* Prevents overflow */
+    }
+    
+    textarea {
+        height: 100px; /* Adjusts height for better usability */
+        resize: vertical; /* Allows vertical resizing on mobile */
+    }
+    
+    input[type="submit"] {
+        background-color: var(--primary-color, green); /* Default to green if variable not set */
+        color: white;
+        font-size: 1.1rem;
+        border: none;
+        padding: 0.75rem;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    input[type="submit"]:hover {
+        background-color: #005bb5;
+        
+    }
 
 
 

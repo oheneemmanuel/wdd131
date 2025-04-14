@@ -13,13 +13,7 @@ window.addEventListener('DOMContentLoaded', () => {
     // Update the second paragraph with the last modified date
     document.getElementById("lastModified").textContent = "Last Modified: " + lastModified;
 
-    const displayMenu = document.getElementById("menu-option");
-
-    const menuToggle = document.getElementById("menu");
-    menuToggle.addEventListener("click", function() {
-        displayMenu.classList.toggle("open");
-        menuToggle.classList.toggle("open");
-    });
+   
 
    
 
@@ -27,6 +21,19 @@ window.addEventListener('DOMContentLoaded', () => {
 
   });
 
+   
+  
+
+
+
+
+
+const displayMenu = document.getElementById("menu-option");
+const menuToggle = document.getElementById("menu");
+    menuToggle.addEventListener("click", function() {
+        displayMenu.classList.toggle("open");
+        menuToggle.classList.toggle("open");
+    });
    
   
 
@@ -334,12 +341,6 @@ calculateButton.addEventListener("click", (event) => {
     displaySpecificationsAndTotal();
 });
 populateDropDown();
-const displayMenu = document.getElementById("menu-option");
-const menuToggle = document.getElementById("menu");
-    menuToggle.addEventListener("click", function() {
-        displayMenu.classList.toggle("open");
-        menuToggle.classList.toggle("open");
-    });
-      
+
     
 
