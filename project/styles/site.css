@@ -126,10 +126,12 @@ nav a:hover {
 
 #menu::before {
     content: "☰";
+    color: white;
 }
 
 #menu.open::before {
     content: "X";
+    color: white;
 }
 
 #menu {
@@ -184,7 +186,7 @@ main h1 {
 }
 #material {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 2fr));
+    grid-template-columns: repeat(2, 1fr);
     padding: 10px;
     width: 100%;
     gap: 15px;
@@ -215,19 +217,31 @@ main h1 {
     color: #555;
 }
 fieldset {
-    border: 2px solid #0074D9;
+    border: none;
     border-radius: 8px;
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 400px;
+    padding: 1rem;
+    margin-bottom: 20px;
+    width: 40%;
+
     background-color: white;
     
+}
+form {
+    font-size: medium;
+    background-color: gainsboro;
+    justify-content: center;
+}
+form div {
+    margin-bottom: 1.5rem;
+
 }
 
 legend {
     font-weight: bold;
+    font-size: 1.5em;
     color: #0074D9;
     padding: 0 10px;
+    margin-bottom: 10px;
 }
 
 label {
@@ -244,6 +258,32 @@ select, input[type="number"] {
     border-radius: 5px;
     font-size: 1em;
 }
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form textarea {
+    width: 50%;
+    padding: 5px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+form input[type="submit"] {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.75px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition:  0.3s ease, color 0.3s ease;
+}
+form input[type="submit"]:hover {
+    background-color: #005bb5;
+    color: white;
+}
+    
 
 button {
     display: block;

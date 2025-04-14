@@ -1,3 +1,36 @@
+// Function to dynamically update the copyright year and last modified date
+window.addEventListener('DOMContentLoaded', () => {
+  
+    // Get the current year using the Date object
+    const currentYear = new Date().getFullYear();
+    
+    // Update the copyright year in the footer's first paragraph
+    document.getElementById("currentyear").textContent = currentYear;
+  
+    // Get the last modified date of the document
+    const lastModified = document.lastModified;
+  
+    // Update the second paragraph with the last modified date
+    document.getElementById("lastModified").textContent = "Last Modified: " + lastModified;
+
+    const displayMenu = document.getElementById("menu-option");
+
+    const menuToggle = document.getElementById("menu");
+    menuToggle.addEventListener("click", function() {
+        displayMenu.classList.toggle("open");
+        menuToggle.classList.toggle("open");
+    });
+
+   
+
+   
+
+  });
+
+   
+  
+
+
 const goods = [
     {
         name: "harmer",
@@ -32,6 +65,98 @@ const goods = [
         name: "mesh",
         price: "GHC 85",
         imageUrl: "images/mesh.jpg"
+    },
+    {
+        name: "Carpet",
+        price: "GHC 250",
+        imageUrl: "images/carpet.jpg"
+    },
+    {
+        name: "Wheelbarrow",
+        price: "GHC 160",
+        imageUrl: "images/whell.jpg"
+    },
+    {
+        name: "Tiles",
+        price: "GHC 200",
+        imageUrl: "images/tiles.jpg"
+    },
+    {
+        name: "WC",
+        price: "GHC 500",
+        imageUrl: "images/toi.jpg"
+    },
+   
+   
+    {
+        name: "Hand Saw",
+        price: "GHC 100",
+        imageUrl: "images/saw.jpg"
+    },
+    {
+        name: "Paint Brush",
+        price: "GHC 20",
+        imageUrl: "images/paintbrush.jpg"
+    },
+    {
+        name: "Paint Roller",
+        price: "GHC 30",
+        imageUrl: "images/rollerbrush.jpg"
+    },
+    {
+        name: "Paint Tray",
+        price: "GHC 15",
+        imageUrl: "images/tray.jpg"
+    },
+    {
+        name: "Gloves",
+        price: "GHC 10",
+        imageUrl: "images/gloves.jpg"
+    },
+    {
+        name: "Safety Goggles",
+        price: "GHC 25",
+        imageUrl: "images/goggles.jpg"
+    },
+    {
+        name: "Plywood",
+        price: "GHC 270",
+        imageUrl: "images/plywood.jpg"
+    },
+    {
+        name: "Nails",
+        price: "GHC 5",
+        imageUrl: "images/nail.jpg"
+    },
+    {
+        name: "Screws",
+        price: "GHC 10",
+        imageUrl: "images/screw.jpg"
+    },
+    {
+        name: "Sandpaper",
+        price: "GHC 8",
+        imageUrl: "images/sanpaper.jpg"
+    },
+    {
+        name: "Paint Thinner",
+        price: "GHC 40",
+        imageUrl: "images/thinner.jpg"
+    },
+    {
+        name: "Caulk Gun",
+        price: "GHC 35",
+        imageUrl: "images/caulk.jpg"
+    },
+    {
+        name: "Ladder",
+        price: "GHC 300",
+        imageUrl: "images/ladder.jpg"
+    },
+    {
+        name: "Helmet",
+        price: "GHC 50",
+        imageUrl: "images/hel.jpg"
     }
 
     
@@ -49,6 +174,66 @@ const paints = [
         imageUrl: "images/paint.jpeg"
             
     },
+    {
+        color: "Green",
+        price: 160,
+        imageUrl: "images/paint.jpeg"
+            
+    },
+    {
+        color: "Yellow",
+        price: 160,
+        imageUrl: "images/paint.jpeg"
+            
+    },
+    {
+        color: "Black",
+        price: 160,
+        imageUrl: "images/paint.jpeg"
+            
+    },
+    {
+        color: "White",
+        price: 160,
+        imageUrl: "images/paint.jpeg"
+            
+    },
+    {
+        color: "Pink",
+        price: 160,
+        imageUrl: "images/paint.jpeg"
+            
+    },
+    {
+        color: "Purple",
+        price: 160,
+        imageUrl: "images/paint.jpeg"
+            
+    },
+    {
+        color: "Orange",
+        price: 160,
+        imageUrl: "images/paint.jpeg"
+            
+    },
+    {
+        color: "Brown",
+        price: 160,
+        imageUrl: "images/paint.jpeg"
+            
+    },
+    {
+        color: "Gray",
+        price: 160,
+        imageUrl: "images/paint.jpeg"
+            
+    },
+    {
+        color: "Beige",
+        price: 160,
+        imageUrl: "images/paint.jpeg"
+            
+    }
 ]
 const cart = [];
 const goodsContainer = document.getElementById("materials");
@@ -95,7 +280,7 @@ function displayGoods(items) {
     
 }
 function updateCartDisplay() {
-    const cartItems = document.getElementByI("cart-items");
+    const cartItems = document.getElementById("cart-items");
     cartItems.innerHTML = ""; // Clear previous content
 
     cart.forEach((item) => {
@@ -106,7 +291,7 @@ function updateCartDisplay() {
 
 }
 function addToCart(item) {
-    Cart.push(item);
+    cart.push(item);
     alert(`${item.name} has been added to your cart!`);
     updateCartDisplay();
 }
@@ -149,6 +334,12 @@ calculateButton.addEventListener("click", (event) => {
     displaySpecificationsAndTotal();
 });
 populateDropDown();
+const displayMenu = document.getElementById("menu-option");
+const menuToggle = document.getElementById("menu");
+    menuToggle.addEventListener("click", function() {
+        displayMenu.classList.toggle("open");
+        menuToggle.classList.toggle("open");
+    });
       
     
 
